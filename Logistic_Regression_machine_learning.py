@@ -1,4 +1,4 @@
-# TODO, logistic Regression, finding the people who bought SUV, YES or NOT
+# TODO,logistic Regression, finding the people who bought SUV, YES or NOT
 #importing modules
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +13,7 @@ y=dataset.iloc[:,4].values
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(X,y,test_size=.25,random_state=0)
 
-#Apply Feature scaling for accuracy and speedy
+#Apply Feature scaling for accuracy and increase speed.
 from sklearn.preprocessing import StandardScaler
 sc_x=StandardScaler()
 x_train=sc_x.fit_transform(x_train)
